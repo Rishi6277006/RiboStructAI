@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rna-float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes rna-pulse {
+  0% { filter: drop-shadow(0 0 0 #00bfae); }
+  50% { filter: drop-shadow(0 0 12px #00e5ff); }
+  100% { filter: drop-shadow(0 0 0 #00bfae); }
+}
+
+.rna-float {
+  animation: rna-float 4s ease-in-out infinite;
+}
+
+.rna-pulse {
+  animation: rna-pulse 3s ease-in-out infinite;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .rna-float, .rna-pulse {
+    animation: none !important;
+  }
+}
+
+/* Micro-animations for buttons */
+.MuiButton-root {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.MuiButton-root:hover, .MuiButton-root:focus-visible {
+  box-shadow: 0 4px 16px 0 rgba(0,191,174,0.18);
+  transform: translateY(-2px) scale(1.03);
+  outline: 2px solid #00bfae;
+  outline-offset: 2px;
+}
+.MuiButton-root:active {
+  transform: scale(0.98);
+}
+
+/* Tab transition/fade-in for tab panels */
+.tab-panel-fade {
+  animation: tab-fade-in 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes tab-fade-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Focus indicator for all focusable elements */
+:focus-visible {
+  outline: 2px solid #00bfae !important;
+  outline-offset: 2px;
+}
+
+/* Ensure good color contrast for accessibility */
+body, .MuiPaper-root, .MuiBox-root {
+  color: #1a1a1a;
+}
+.MuiPaper-root[role="region"] {
+  background: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  body, .MuiPaper-root, .MuiBox-root {
+    color: #f4f6fb;
+  }
+  .MuiPaper-root[role="region"] {
+    background: #23272a;
+  }
+}
+
+/* Card hover/active/focus effects */
+.MuiCard-root {
+  transition: box-shadow 0.2s, transform 0.18s;
+}
+.MuiCard-root:hover, .MuiCard-root:focus-visible {
+  box-shadow: 0 8px 32px 0 rgba(0,191,174,0.18);
+  transform: translateY(-4px) scale(1.025);
+  outline: 2px solid #00bfae;
+  outline-offset: 2px;
+}
+
+/* Section fade-in */
+.section-fade {
+  animation: section-fade-in 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes section-fade-in {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Focus glow for cards and inputs */
+.MuiCard-root:focus-visible, .MuiInputBase-root:focus-within {
+  box-shadow: 0 0 0 3px #00bfae55;
+}
+
+/* Subtle background gradient for body */
+body {
+  background: linear-gradient(135deg, #eaf7fa 0%, #f4f6fb 100%);
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #181c1f 0%, #23272a 100%);
+  }
+}

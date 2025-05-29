@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="rna-float rna-pulse" width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rnaGradient" x1="0" y1="0" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4dd0e1"/>
+      <stop offset="1" stop-color="#008080"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="110" cy="110" rx="100" ry="100" fill="url(#rnaGradient)" opacity="0.18"/>
+  <path d="M40 180 Q60 120 110 110 Q160 100 180 40" stroke="url(#rnaGradient)" stroke-width="6" fill="none"/>
+  <circle cx="40" cy="180" r="8" fill="#4dd0e1"/>
+  <circle cx="180" cy="40" r="8" fill="#008080"/>
+  <circle cx="110" cy="110" r="10" fill="#fff" stroke="#008080" stroke-width="3"/>
+  <circle cx="60" cy="120" r="5" fill="#fff" stroke="#4dd0e1" stroke-width="2"/>
+  <circle cx="160" cy="100" r="5" fill="#fff" stroke="#4dd0e1" stroke-width="2"/>
+  <text x="50%" y="205" text-anchor="middle" fill="#008080" font-size="18" font-family="Arial" opacity="0.7">RNA</text>
+</svg> 
