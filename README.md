@@ -2,6 +2,12 @@
 
 **RiboStructAI** is a next-generation web platform that empowers researchers, biologists, and innovators to explore, analyze, and design RNA molecules with the help of advanced AI and modern visualization tools.
 
+## 🎥 Video Demo
+
+[![Watch the demo](https://user-images.githubusercontent.com/placeholder/demo-thumbnail.png)](https://www.loom.com/share/02e95cfda9624757879fb1a0a1c146cd?sid=efc04bd1-d533-4a4b-a08e-db9807789ecb)
+
+👉 [Watch the interactive demo on Loom](https://www.loom.com/share/02e95cfda9624757879fb1a0a1c146cd?sid=efc04bd1-d533-4a4b-a08e-db9807789ecb)
+
 ---
 
 ## 🌱 Vision
